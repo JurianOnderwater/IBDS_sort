@@ -22,5 +22,5 @@ down_039to02 = [x[0] for x in genes_downregulated if (float(x[1]) < 0.39 and flo
 down_019to01 = [x[0] for x in genes_downregulated if (float(x[1]) < 0.19 and float(x[1]) > 0.1)]
 down_009down = [x[0] for x in genes_downregulated if float(x[1]) < 0.09 ]
 
-for i in down_009down:
- print(i+',')
+for gene in down_009down:
+    print(gene + ',')
